@@ -32,6 +32,15 @@ Flutter lab project for the UI Design – Flutter Lab Manual.
 - Expected output and run instructions: `experiments/experiment_5_output.md`
 - Added the Provider dependency to `pubspec.yaml`
 
+## Additional learning materials for Experiments 1–5
+
+- Experiment 1: setup checklist, expected output, viva questions, Dart quick reference, and additional Dart examples for loops, lists, and functions.
+- Experiment 2: expected output, widget reference guide, widget tree, layout checklist, and viva questions.
+- Experiment 3: expected output, responsive UI test checklist, and viva questions.
+- Experiment 4: expected output, navigation test scenarios, and viva questions.
+- Experiment 5: expected output, manual test checklist, and viva questions.
+- Combined learning outcomes: `experiments/experiments_1_to_5_summary.md`
+
 ## Run Experiment 3, 4, or 5
 These experiment files are standalone examples. To run one:
 1. Back up the current `lib/main.dart`.
