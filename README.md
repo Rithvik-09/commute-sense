@@ -25,11 +25,18 @@ Flutter lab project for the UI Design – Flutter Lab Manual.
 - Includes Home, Profile, Settings, and Route Details screens
 - Source: `experiments/experiment_4_navigation.dart`
 
-## Run Experiment 3 or 4
+### Experiment 5 — State management with setState() and Provider
+- Demonstrates a local counter updated with `setState()`
+- Demonstrates shared counter state with `ChangeNotifier`, `notifyListeners()`, and `Consumer`
+- Source: `experiments/experiment_5_state_management.dart`
+- Expected output and run instructions: `experiments/experiment_5_output.md`
+- Added the Provider dependency to `pubspec.yaml`
+
+## Run Experiment 3, 4, or 5
 These experiment files are standalone examples. To run one:
 1. Back up the current `lib/main.dart`.
 2. Copy the selected experiment file's contents into `lib/main.dart`.
 3. From the project root, run `flutter pub get`.
 4. Run `flutter run` on an emulator or connected phone.
 
-Both examples use built-in Flutter Material widgets and require no extra packages.
+Experiments 3 and 4 use built-in Flutter Material widgets and require no extra packages. Experiment 5 uses Provider; run `flutter pub get` before running it. The expected output is documented, but these standalone examples have not been device-tested as part of this update.
