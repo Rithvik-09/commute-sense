@@ -1,108 +1,39 @@
-# Commute Sense
+# Commute Sense — Flutter Lab Experiments
 
-Flutter lab project for the UI Design – Flutter Lab Manual.
+This repository contains one standalone source file for each of the eight experiments in the Flutter lab record. Each experiment can be run independently; the files are intentionally kept simple for lab demonstration and viva preparation.
 
-## Experiments 1–8
+## Experiments
 
-### Experiment 1 — Flutter & Dart basics
-- Flutter/Dart project configuration.
-- Basic Dart programs: Hello World, variables, arithmetic, functions, and conditional statements.
-- Source files: `dart_programs/`.
+| No. | Experiment | Source file |
+|---:|---|---|
+| 1 | Flutter and Dart basics | [experiment_1.dart](experiment_1.dart) |
+| 2 | Flutter widgets and layouts | [experiment_2.dart](experiment_2.dart) |
+| 3 | Responsive UI using MediaQuery and LayoutBuilder | [experiment_3.dart](experiment_3.dart) |
+| 4 | Navigation using Navigator and named routes | [experiment_4.dart](experiment_4.dart) |
+| 5 | State management using setState and Provider | [experiment_5.dart](experiment_5.dart) |
+| 6 | Custom widgets and styling | [experiment_6.dart](experiment_6.dart) |
+| 7 | Forms and validation | [experiment_7.dart](experiment_7.dart) |
+| 8 | Animations in Flutter | [experiment_8.dart](experiment_8.dart) |
 
-**Actual output screenshot:**
+## Run online
 
-![Experiment 1 actual DartPad output](screenshots/experiment_1.png)
-
-> This image appears once `screenshots/experiment_1.png` is uploaded to the repository.
-
-### Experiment 2 — Flutter widgets and layouts
-- Demonstrates Text, Icon, Container, Card, ElevatedButton, Row, Column, Stack, and SizedBox.
-- Main app entry point: `lib/main.dart`.
-
-### Experiment 3 — Responsive UI with MediaQuery and LayoutBuilder
-- Reads screen width and orientation using MediaQuery.
-- Uses LayoutBuilder to switch between a phone-style column and a wider tablet-style row.
-- Uses scrolling and flexible layouts to reduce overflow.
-- Source: `experiments/experiment_3_responsive_ui.dart`.
-
-### Experiment 4 — Navigation with Navigator and Named Routes
-- Demonstrates Navigator.push with MaterialPageRoute and Navigator.pushNamed with registered routes.
-- Includes Home, Profile, Settings, and Route Details screens.
-- Source: `experiments/experiment_4_navigation.dart`.
-
-### Experiment 5 — State management with setState() and Provider
-- Demonstrates local state with setState() and shared state with ChangeNotifier, notifyListeners(), and Consumer.
-- Source: `experiments/experiment_5_state_management.dart`.
-- Dependency: Provider (listed in `pubspec.yaml`).
-
-### Experiment 6 — Custom widgets and styling
-- Demonstrates reusable custom widgets, styled buttons/cards, and a Material theme.
-- Source: `experiments/experiment_6_custom_widgets_and_theme.dart`.
-- Expected behavior: a custom widgets screen with a styled card and button.
-
-### Experiment 7 — Forms and validation
-- Demonstrates a form with name, email, and password fields and validation feedback.
-- Source: `experiments/experiment_7_forms_and_validation.dart`.
-- Expected behavior: invalid or empty fields show validation messages; valid input can be submitted.
-
-### Experiment 8 — Animations in Flutter
-- Demonstrates an animated box, fading text, and a sliding orange box.
-- Source: `experiments/experiment_8_animations.dart`.
-- Expected behavior: tapping the animation control triggers the animations.
-
-## Run Experiments 6–8 online
-
-These three files are standalone Flutter examples and use Flutter's built-in Material library. They do not need the Provider package.
-
-1. Open [DartPad](https://dartpad.dev/) and select a **Flutter** sample/project (not Dart-only mode).
-2. Open one of the experiment source files linked above on GitHub.
-3. Copy the entire file contents into DartPad's `main.dart`, replacing the starter example.
-4. Press **Run** and wait for the preview.
-5. Test the controls:
-   - **Experiment 6:** inspect the custom card/button and tap the button.
-   - **Experiment 7:** submit an empty form, try an invalid email/short password, then try valid values.
-   - **Experiment 8:** tap the animation control and observe the box/text transitions.
-6. Capture a screenshot of the actual running preview. Save it locally using the filenames below.
-7. Add the screenshots to this repository in a folder named `screenshots/` and commit them (see instructions below).
-
-If DartPad cannot run the example in your browser, try [FlutLab](https://flutlab.io/) by creating a Flutter project and replacing `lib/main.dart` with the selected experiment file. Online editors can change their UI or free-tier limits over time.
+1. Open [DartPad](https://dartpad.dev/).
+2. For **Experiment 1**, select Dart mode. Copy `experiment_1.dart` into the editor and click **Run**.
+3. For **Experiments 2–8**, select a Flutter sample/project. Copy the complete selected file into `main.dart` and click **Run**.
+4. Test the interactions described in each experiment. Experiment 5 uses Provider; if the online environment does not include that package, use an editor that supports Flutter package dependencies or add Provider in its project configuration.
+5. Capture a screenshot of the actual output after the experiment runs successfully.
 
 ## Actual output screenshots
 
-Screenshots must be captured from a running Flutter preview. **No screenshots are included yet**; expected behavior described above is not a substitute for a real run.
+Screenshots will be added after all eight experiments have been run and checked. The images will be stored in `screenshots/` and embedded here:
 
-After running each experiment, save:
-- `screenshots/experiment_6.png`
-- `screenshots/experiment_7.png`
-- `screenshots/experiment_8.png`
+- Experiment 1: `screenshots/experiment_1.png`
+- Experiment 2: `screenshots/experiment_2.png`
+- Experiment 3: `screenshots/experiment_3.png`
+- Experiment 4: `screenshots/experiment_4.png`
+- Experiment 5: `screenshots/experiment_5.png`
+- Experiment 6: `screenshots/experiment_6.png`
+- Experiment 7: `screenshots/experiment_7.png`
+- Experiment 8: `screenshots/experiment_8.png`
 
-For Experiment 7, ideally capture the form with validation errors and, if possible, a second screenshot showing successful submission. For Experiment 8, capture the preview while the animation is visible. Add only screenshots you actually captured from the running app.
-
-### Add screenshots using Git
-
-From the repository root, after creating the `screenshots` folder and saving the images there:
-
-```powershell
-git add screenshots/
-git commit -m "Add actual output screenshots for Flutter experiments 6-8"
-git push
-```
-
-## Run locally (optional)
-
-From the repository root:
-
-```powershell
-flutter pub get
-flutter devices
-flutter run
-```
-
-To run a standalone experiment locally, back up `lib/main.dart`, copy the chosen experiment file into `lib/main.dart`, then run `flutter run`. Restore your original entry point when finished. Experiments 6–8 are separate demos; they do not replace the main Commute Sense app automatically.
-
-## Learning materials for Experiments 1–5
-
-- Experiment 1: setup checklist, expected output, viva questions, Dart quick reference, and additional Dart examples.
-- Experiment 2: expected output, widget reference guide, widget tree, layout checklist, and viva questions.
-- Experiments 3–5: expected outputs, test checklists, and viva questions.
-- Combined learning outcomes: `experiments/experiments_1_to_5_summary.md`.
+Only genuine screenshots captured from the running programs will be added. The screenshot collection is not complete yet.
