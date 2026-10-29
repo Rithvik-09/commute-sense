@@ -9,6 +9,12 @@ Flutter lab project for the UI Design – Flutter Lab Manual.
 - Basic Dart programs: Hello World, variables, arithmetic, functions, and conditional statements.
 - Source files: `dart_programs/`.
 
+**Actual output screenshot:**
+
+![Experiment 1 actual DartPad output](screenshots/experiment_1.png)
+
+> This image appears once `screenshots/experiment_1.png` is uploaded to the repository.
+
 ### Experiment 2 — Flutter widgets and layouts
 - Demonstrates Text, Icon, Container, Card, ElevatedButton, Row, Column, Stack, and SizedBox.
 - Main app entry point: `lib/main.dart`.
